@@ -1,57 +1,46 @@
 import React from "react";
 
-const Page = () => {
+const Portfolio = () => {
   return (
-    <div className="bg-gray-100 flex items-center justify-center h-screen">
-      <div className="w-full max-w-xs">
-        <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-          <h1 className="text-center text-2xl font-bold mb-6">Login</h1>
-          <div className="mb-4">
-            <label
-              className="block text-gray-700 text-sm font-bold mb-2"
-              htmlFor="username"
-            >
-              Username
-            </label>
-            <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 "
-              id="username"
-              type="text"
-              placeholder="Enter your username"
-            />
-          </div>
-          <div className="mb-6">
-            <label
-              className="block text-gray-700 text-sm font-bold mb-2"
-              htmlFor="password"
-            >
-              Password
-            </label>
-            <input
-              className="shadow border rounded w-full py-2 px-3 text-gray-700 mb-3 "
-              id="password"
-              type="password"
-              placeholder="********"
-            />
-          </div>
-          <div className="flex items-center justify-between">
-            <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded "
-              type="button"
-            >
-              Sign In
-            </button>
-          </div>
-          <div className="flex items-center justify-between">
-            Don't have an accout yet ?
-            <a href="#" className="text-blue-500 underline">
-              sign up
-            </a>
-          </div>
-        </form>
+    <div className="bg-pink-50 flex items-center justify-center h-screen">
+      <div className="max-w-lg bg-white shadow-lg rounded-lg p-8 text-center">
+        <div className="mb-4">
+          <h1 className="text-4xl font-bold text-pink-600 mb-2">Alaka Rai</h1>
+          <p className="text-gray-500">Web Developer & Student</p>
+        </div>
+        {/* Butterfly image decoration */}
+        <div className="flex justify-center mb-6">
+          <img
+            src="https://st4.depositphotos.com/1359043/30812/i/450/depositphotos_308121756-stock-photo-color-butterfly-isolated-on-white.jpg"
+            alt="Butterfly"
+            className="w-12 h-12"
+          />
+        </div>
+        {/* About section */}
+        <p className="text-gray-600 mb-4">
+          Hi, I’m Alka! I’m a fourth-year computer engineering student at KEC.I
+          create beautiful, functional websites with a touch of elegance. I love
+          design, coding, and crafting experiences that are both pretty and
+          practical.
+        </p>
+        {/* Button to Contact */}
+        <a
+          href="/"
+          className="inline-block bg-pink-500 text-white font-bold py-2 px-6 rounded-full hover:bg-pink-700 transition duration-300"
+        >
+          Contact Me
+        </a>
+        {/* Butterfly footer decoration */}
+        <div className="flex justify-center mt-6">
+          <img
+            src="https://st4.depositphotos.com/1359043/30812/i/450/depositphotos_308121756-stock-photo-color-butterfly-isolated-on-white.jpg"
+            alt="Butterfly"
+            className="w-12 h-12"
+          />
+        </div>
       </div>
     </div>
   );
 };
 
-export default Page;
+export default Portfolio;
