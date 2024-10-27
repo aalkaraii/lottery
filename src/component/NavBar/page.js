@@ -32,14 +32,19 @@ const CustonNavBar = () => {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="#" color="foreground" aria-current="page">
+            <Link href="/projects" color="foreground" aria-current="page">
               Projects
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
-              Resume
-            </Link>
+            <a
+              href="/resume.pdf" // This links to the resume in the public folder
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" text-black font-bold py-2 px-4 rounded"
+            >
+              View Resume
+            </a>
           </NavbarItem>
         </NavbarContent>
         <NavbarContent justify="end">
