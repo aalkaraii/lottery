@@ -3,8 +3,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className=" font-bold">
-      <CustonNavBar></CustonNavBar>
+    <div className=" font-bold" id="skills">
       <div className="bg-pink-50 flex items-center justify-center h-screen">
         <div className="max-w-4xl bg-white shadow-lg rounded-lg p-8 text-center">
           <h1 className="text-3xl font-bold text-pink-600 mb-6">My Skills</h1>

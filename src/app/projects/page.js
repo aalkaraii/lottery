@@ -42,9 +42,8 @@ const projects = [
 
 const ProjectsPage = () => {
   return (
-    <div className=" font-bold">
-      <CustonNavBar></CustonNavBar>
-      <div className="bg-gray-100 min-h-screen py-10">
+    <div className=" font-bold" id="projects">
+      <div className="bg-pink-50 min-h-screen py-10">
         <h1 className="text-center text-4xl font-bold text-pink-600 mb-10">
           My Projects
         </h1>

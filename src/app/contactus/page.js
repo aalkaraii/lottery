@@ -3,12 +3,11 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div className=" font-bold">
-      <CustonNavBar></CustonNavBar>
+    <div className=" font-bold  " id="contact">
       <div className="bg-pink-50 flex items-center justify-center h-screen">
-        <div className="max-w-lg bg-white shadow-lg rounded-lg p-8">
+        <div className="max-w-lg bg-white shadow-lg rounded-lg p-8 ">
           <h1 className="text-3xl font-bold text-pink-600 mb-6 text-center">
-            Contact Us
+            Contact me
           </h1>
 
           {/* Name Input */}
@@ -71,7 +70,11 @@ const ContactUs = () => {
 
           {/* Butterfly image decoration */}
           <div className="flex justify-center mt-6">
-            <img src="----" alt="Butterfly" className="w-12 h-12" />
+            <img
+              src="https://st4.depositphotos.com/1359043/30812/i/450/depositphotos_308121756-stock-photo-color-butterfly-isolated-on-white.jpg"
+              alt="Butterfly"
+              className="w-12 h-12"
+            />
           </div>
         </div>
       </div>
