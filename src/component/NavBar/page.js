@@ -9,10 +9,16 @@ import {
   Button,
 } from "@nextui-org/react";
 
-const CustonNavBar = () => {
+const CustonNavBar = ({
+  scrollToSkills,
+  scrollToProjects,
+  scrollToContact,
+  scrollToConnect,
+}) => {
   const handleGitHubClick = () => {
     window.open("https://github.com/aalkaraii", "_blank");
   };
+
   return (
     <div>
       <Navbar>
@@ -20,7 +26,7 @@ const CustonNavBar = () => {
           <NavbarItem>
             <Link
               color="foreground"
-              href="/#"
+              href="#"
               className="flex flex-col items-center"
             >
               <p className="font-bold text-inherit text-pink-500">ALAKA RAI</p>
@@ -30,21 +36,26 @@ const CustonNavBar = () => {
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem>
-            <Link color="foreground" href="#skills">
-              skills
+            <Link color="foreground" onClick={scrollToSkills}>
+              Skills
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="#projects" color="foreground" aria-current="page">
+            <Link color="foreground" onClick={scrollToProjects}>
               Projects
             </Link>
           </NavbarItem>
           <NavbarItem>
+            <Link color="foreground" onClick={scrollToConnect}>
+              social media
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
             <a
-              href="/resume.pdf" // This links to the resume in the public folder
+              href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className=" text-black font-bold py-2 px-4 rounded"
+              className="text-black font-bold py-2 px-4 rounded"
             >
               View Resume
             </a>
@@ -57,7 +68,12 @@ const CustonNavBar = () => {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Button as={Link} color="black" href="#contactus" variant="flat">
+            <Button
+              as={Link}
+              color="black"
+              onClick={scrollToContact}
+              variant="flat"
+            >
               Email
             </Button>
           </NavbarItem>
