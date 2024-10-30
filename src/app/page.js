@@ -5,6 +5,22 @@ import Skills from "./skills/page";
 import ProjectsPage from "./projects/page";
 import ContactUs from "./contactus/page";
 import ConnectWithUs from "./connect/page";
+import AnimatedCatBackground from "@/component/Bacrground/page";
+const useScrollAnimation = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll(".scroll-trigger");
+      elements.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.9) {
+          el.classList.add("animate-fadeInUp");
+        }
+      });
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+};
 
 const Portfolio = () => {
   // Define refs for each section
@@ -29,7 +45,6 @@ const Portfolio = () => {
           scrollToConnect={() => scrollToSection(connectRef)}
         />
       </div>
-
       <div className="bg-pink-50 flex items-center justify-center h-screen">
         {/* Main content */}
         <div className="max-w-lg bg-white shadow-lg rounded-lg p-8 text-center">
@@ -64,7 +79,6 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-
       <div ref={skillsRef}>
         <Skills />
       </div>
