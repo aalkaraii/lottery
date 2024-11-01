@@ -5,7 +5,11 @@ import Skills from "./skills/page";
 import ProjectsPage from "./projects/page";
 import ContactUs from "./contactus/page";
 import ConnectWithUs from "./connect/page";
-import AnimatedCatBackground from "@/component/Bacrground/page";
+import { FaGithub, FaTwitter, FaLinkedin, FaTiktok } from "react-icons/fa";
+
+import FooterPage from "@/component/footer/page";
+import Link from "next/link";
+
 const useScrollAnimation = () => {
   useEffect(() => {
     const handleScroll = () => {
@@ -79,6 +83,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
+
       <div ref={skillsRef}>
         <Skills />
       </div>
