@@ -1,32 +1,19 @@
 "use client";
 import CustonNavBar from "@/component/NavBar/page";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Skills from "./skills/page";
 import ProjectsPage from "./projects/page";
 import ContactUs from "./contactus/page";
 import ConnectWithUs from "./connect/page";
-import { FaGithub, FaTwitter, FaLinkedin, FaTiktok } from "react-icons/fa";
-
-import FooterPage from "@/component/footer/page";
-import Link from "next/link";
-
-const useScrollAnimation = () => {
-  useEffect(() => {
-    const handleScroll = () => {
-      const elements = document.querySelectorAll(".scroll-trigger");
-      elements.forEach((el) => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top <= window.innerHeight * 0.9) {
-          el.classList.add("animate-fadeInUp");
-        }
-      });
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-};
 
 const Portfolio = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // Toggle dark mode
+  const toggleDarkMode = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+  };
+
   // Define refs for each section
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
@@ -39,19 +26,27 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="font-bold bg-transparent relative">
+    <div
+      className={`font-bold ${
+        isDarkMode ? "bg-slate-600 text-pink-300" : "bg-pink-50"
+      } relative`}
+    >
       <div className="fixed top-0 left-0 right-0 z-50">
-        {/* Pass scroll functions to CustonNavBar */}
         <CustonNavBar
           scrollToSkills={() => scrollToSection(skillsRef)}
           scrollToProjects={() => scrollToSection(projectsRef)}
           scrollToContact={() => scrollToSection(contactRef)}
           scrollToConnect={() => scrollToSection(connectRef)}
+          toggleDarkMode={toggleDarkMode} // Pass toggle function to navbar
         />
       </div>
-      <div className="bg-pink-50 flex items-center justify-center h-screen">
+      <div className="flex items-center justify-center h-screen">
         {/* Main content */}
-        <div className="max-w-lg bg-white shadow-lg rounded-lg p-8 text-center">
+        <div
+          className={`max-w-lg shadow-lg rounded-lg p-8 text-center ${
+            isDarkMode ? "bg-gray-800" : "bg-white"
+          }`}
+        >
           <h1 className="text-4xl font-bold text-pink-600 mb-2">Alaka Rai</h1>
           <p className="text-gray-500">Web Developer & Student</p>
           <div className="flex justify-center mt-6">
@@ -84,6 +79,7 @@ const Portfolio = () => {
         </div>
       </div>
 
+      {/* Other sections */}
       <div ref={skillsRef}>
         <Skills />
       </div>

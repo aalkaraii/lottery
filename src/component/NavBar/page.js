@@ -15,6 +15,7 @@ const CustonNavBar = ({
   scrollToProjects,
   scrollToContact,
   scrollToConnect,
+  toggleDarkMode, // Receive toggle function as a prop
 }) => {
   const handleGitHubClick = () => {
     window.open("https://github.com/aalkaraii", "_blank");
@@ -31,7 +32,6 @@ const CustonNavBar = ({
               className="flex flex-col items-center"
             >
               <div className="flex items-center space-x-2">
-                {/* Girl Icon */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -42,8 +42,6 @@ const CustonNavBar = ({
                 >
                   <path d="M12 12c1.656 0 3-1.343 3-3s-1.344-3-3-3-3 1.343-3 3 1.344 3 3 3zm0 1.5c-2.723 0-8 1.364-8 4.087V20h16v-2.413c0-2.723-5.277-4.087-8-4.087z" />
                 </svg>
-
-                {/* Name and Title */}
                 <div>
                   <p className="font-extrabold text-pink-500 text-lg">
                     ALAKA RAI
@@ -105,6 +103,16 @@ const CustonNavBar = ({
               className="hover:bg-gray-200 rounded-full"
             >
               Github
+            </Button>
+          </NavbarItem>
+          <NavbarItem>
+            <Button
+              auto
+              flat
+              onClick={toggleDarkMode} // Use the toggleDarkMode prop here
+              className="hover:bg-gray-300 rounded-full"
+            >
+              Dark Mode
             </Button>
           </NavbarItem>
           <NavbarItem>
