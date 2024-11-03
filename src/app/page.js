@@ -5,6 +5,7 @@ import Skills from "./skills/page";
 import ProjectsPage from "./projects/page";
 import ContactUs from "./contactus/page";
 import ConnectWithUs from "./connect/page";
+import ParticlesBackground from "@/component/TsParticle/page";
 
 const Portfolio = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);

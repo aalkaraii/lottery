@@ -94,7 +94,7 @@ const ConnectWithUs = () => {
           {/* Social Media Links */}
           <div className="flex justify-center space-x-6 mt-4">
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/alka-rai-323259247/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -105,7 +105,7 @@ const ConnectWithUs = () => {
               />
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/alkaaraii/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -116,7 +116,7 @@ const ConnectWithUs = () => {
               />
             </a>
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/alka.raie/"
               target="_blank"
               rel="noopener noreferrer"
             >
