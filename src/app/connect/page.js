@@ -8,7 +8,7 @@ const ConnectWithUs = () => {
           <h1 className="text-3xl font-bold text-pink-600 mb-6">Find me on</h1>
 
           <p className="text-gray-600 mb-4">
-            Let's get connected! Follow me on social media or reach out via
+            Let&apos;s get connected! Follow me on social media or reach out via
             email.
           </p>
 
@@ -24,7 +24,6 @@ const ConnectWithUs = () => {
                 className="w-8 h-8 hover:scale-110 transition-transform"
               />
             </a>
-
             <a
               href="https://www.instagram.com"
               target="_blank"
@@ -36,7 +35,6 @@ const ConnectWithUs = () => {
                 className="w-8 h-8 hover:scale-110 transition-transform"
               />
             </a>
-
             <a
               href="https://www.facebook.com"
               target="_blank"
@@ -48,7 +46,6 @@ const ConnectWithUs = () => {
                 className="w-8 h-8 hover:scale-110 transition-transform"
               />
             </a>
-
             <a href="mailto:example@example.com">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg"
@@ -69,13 +66,11 @@ const ConnectWithUs = () => {
       </div>
       <footer className="bg-pink-300 text-black p-8 mt-4">
         <div className="container mx-auto text-center space-y-4">
-          {/* Contact Information */}
           <div>
             <h2 className="text-xl font-bold">Alaka Rai</h2>
             <p>Web Developer & Student at KEC</p>
           </div>
 
-          {/* Footer Links */}
           <div className="flex justify-center space-x-8 text-sm">
             <a href="#about" className="hover:underline">
               About Me
@@ -91,7 +86,6 @@ const ConnectWithUs = () => {
             </a>
           </div>
 
-          {/* Social Media Links */}
           <div className="flex justify-center space-x-6 mt-4">
             <a
               href="https://www.linkedin.com/in/alka-rai-323259247/"
@@ -135,7 +129,6 @@ const ConnectWithUs = () => {
             </a>
           </div>
 
-          {/* Copyright */}
           <div className="text-gray-300 text-sm mt-4">
             <p>
               &copy; {new Date().getFullYear()} Alaka Rai. All rights reserved.
