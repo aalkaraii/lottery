@@ -85,7 +85,6 @@ const ConnectWithUs = () => {
               Skills
             </a>
           </div>
-
           <div className="flex justify-center space-x-6 mt-4">
             <a
               href="https://www.linkedin.com/in/alka-rai-323259247/"
