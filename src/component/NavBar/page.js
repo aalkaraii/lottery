@@ -8,7 +8,6 @@ import {
   Link,
   Button,
 } from "@nextui-org/react";
-import { Github } from "@icons-pack/react-simple-icons";
 
 const CustonNavBar = ({
   scrollToSkills,
@@ -98,7 +97,6 @@ const CustonNavBar = ({
             <Button
               auto
               flat
-              icon={<Github size={20} />}
               onClick={handleGitHubClick}
               className="hover:bg-gray-200 rounded-full"
             >
