@@ -8,7 +8,7 @@ const ConnectWithUs = () => {
           <h1 className="text-3xl font-bold text-pink-600 mb-6">Find me on</h1>
 
           <p className="text-gray-600 mb-4">
-            Let&apos;s get connected! Follow me on social media or reach out via
+            Let us get connected! Follow me on social media or reach out via
             email.
           </p>
 
