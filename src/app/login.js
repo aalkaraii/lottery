@@ -86,7 +86,7 @@ const Page = () => {
             </button>
           </div>
           <div className="flex items-center justify-between">
-            Don't have an accout yet ?
+            Do not have an accout yet ?
             <a href="#" className="text-blue-500 underline">
               sign up
             </a>
